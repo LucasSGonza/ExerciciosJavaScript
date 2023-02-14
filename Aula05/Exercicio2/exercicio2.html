@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let vetor = [];
+
+        function lerVetor(v) { //v de vetor
+            for (let i = 0; i < 10; i++) {
+                v[i] = parseInt(prompt("Digite um numero natural!"));
+            }
+        }
+
+        function imprimirInicioFim(v) {
+            for (let i = 0; i < v.length; i++) {
+                console.log(v[i]);
+            }
+
+        }
+
+        function imprimirFimInicio(v) {
+            for (let i = 1; i <= v.length; i++) { //i = 1 pq se nao o primeiro elemento não irá existir ex: v.length = 5  -> [0][1][2][3][4] --> v [5 - 0] = nao existe [5]
+                console.log(v[v.length - i]);
+            }
+        }
+
+        lerVetor(vetor);
+        imprimirInicioFim(vetor);
+        imprimirFimInicio(vetor);
+
+    </script>
+</body>
+
+</html>
