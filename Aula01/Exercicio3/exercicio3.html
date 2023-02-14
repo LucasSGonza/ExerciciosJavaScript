@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+    <button onclick="testar()">Teste</button>
+    <script>
+        function testar() {
+            
+            let tempCelsius, tempFahrenheit;
+            tempCelsius = parseFloat(prompt("Digite a temperatura em Celsius"));
+            tempFahrenheit = (tempCelsius * 1.8) + 32;
+            
+            alert("A temperatura " + tempCelsius + "°C (Celsius) é equivalente à temperatura " + tempFahrenheit + "°F (Fahrenheit)");
+            //alert("A temperatura " + "x" + "°C (Celsius) é equivalente à temperatura " + "y" + "°F (Fahrenheit)");
+        }
+    </script>
+</body>
+
+</html>

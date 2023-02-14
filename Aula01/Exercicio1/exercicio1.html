@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio 1</title>
+</head>
+
+<body>
+
+    <form>
+        <!--  
+        Essa parte do código serve para aparecer um espaço para o usuário inserir dados. Caso for usar prompt(), na qual irá abrir uma janela para o usuário, não é necessário
+        essa parte do código. -->
+
+        <input type="text" id="nascimento" size="21px" placeholder="Digite seu ano de nascimento"> <br> <br>
+        <input type="text" id="anoAtual" size="21px" placeholder="Digite o ano atual"> <br> <br>
+
+
+        <script src="exercicio1Script.js"></script>
+        <!-- Poderia ser feito de várias formas a inserção do JavaScript, nesse caso, resolvi fazer
+    utilizando um arquivo externo .js , mas daria para fazer criando a função dentro da tag <script> aqui msm no HTML -->
+
+        <button onclick="imprimirIdade()">Confirmar</button>
+        <input type="reset" value="Limpar"> <!-- botão para limpar os campos, é totalmente desnecessário kkkk -->
+
+    </form>
+    
+</body>
+
+</html>
