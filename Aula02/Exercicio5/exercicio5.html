@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio 5</title>
+</head>
+
+<body>
+    <div>
+        <script type="text/javascript">
+
+            let valorBruto, horasTrabalhadas, codigoColaborador = parseInt(prompt("Informe o código do colaborador!"));
+
+            if (codigoColaborador >= 1 && codigoColaborador <= 5) {
+
+                switch (codigoColaborador) {
+
+                    case 1:
+                        horasTrabalhadas = parseInt(prompt("Informe as horas trabalhadas do colaborador!"));
+                        valorBruto = horasTrabalhadas * 45.78;
+
+                        document.write("Código: " + codigoColaborador + "<br>" +
+                            "Nome: Ana <br>" +
+                            "Valor da hora: R$45,78 <br>" +
+                            "Horas trabalhadas: " + horasTrabalhadas + "<br>" +
+                            "Valor bruto a ser pago: R$" + valorBruto);
+                        break;
+
+                    case 2:
+                        horasTrabalhadas = parseInt(prompt("Informe as horas trabalhadas do colaborador!"));
+                        valorBruto = horasTrabalhadas * 60;
+
+                        document.write("Código: " + codigoColaborador + "<br>" +
+                            "Nome: Bruna <br>" +
+                            "Valor da hora: R$60,00 <br>" +
+                            "Horas trabalhadas: " + horasTrabalhadas + "<br>" +
+                            "Valor bruto a ser pago: R$" + valorBruto);
+                        break;
+
+                    case 3:
+                        horasTrabalhadas = parseInt(prompt("Informe as horas trabalhadas do colaborador!"));
+                        valorBruto = horasTrabalhadas * 38.99;
+
+                        document.write("Código: " + codigoColaborador + "<br>" +
+                            "Nome: Carlos <br>" +
+                            "Valor da hora: R$38,99 <br>" +
+                            "Horas trabalhadas: " + horasTrabalhadas + "<br>" +
+                            "Valor bruto a ser pago: R$" + valorBruto);
+                        break;
+
+                    case 4:
+                        horasTrabalhadas = parseInt(prompt("Informe as horas trabalhadas do colaborador!"));
+                        valorBruto = horasTrabalhadas * 45.78;
+
+                        document.write("Código: " + codigoColaborador + "<br>" +
+                            "Nome: Diogo <br>" +
+                            "Valor da hora: R$45,78 <br>" +
+                            "Horas trabalhadas: " + horasTrabalhadas + "<br>" +
+                            "Valor bruto a ser pago: R$" + valorBruto);
+                        break;
+
+                    case 5:
+                        horasTrabalhadas = parseInt(prompt("Informe as horas trabalhadas do colaborador!"));
+                        valorBruto = horasTrabalhadas * 45.78;
+
+                        document.write("Código: " + codigoColaborador + "<br>" +
+                            "Nome: Ester <br>" +
+                            "Valor da hora: R$45,78 <br>" +
+                            "Horas trabalhadas: " + horasTrabalhadas + "<br>" +
+                            "Valor bruto a ser pago: R$" + valorBruto);
+                        break;
+
+                }
+
+            } else {
+                alert("O código do colaborador inserido não existe!");
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
