@@ -1,2 +1,2 @@
 # ExerciciosJavaScript
-Exercícios de Lógica de Programação utilizando a linguagem JavaScript
+Exercícios de Lógica de Programação utilizando a linguagem JavaScript e HTML
