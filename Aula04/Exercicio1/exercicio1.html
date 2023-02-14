@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var numeros = []; //em JS nao precisa definir o tamanho do vetor como é feito em Java
+        var numIndexImpar = [];
+        var numNegativo = [];
+
+        for (var i = 0; i < 10; i++) {
+            numeros[i] = parseInt(prompt("Digite um numero inteiro!"));
+        }
+        console.log("Numeros: " + numeros);
+
+        numeros.forEach((numero, index) => {
+
+            if ((index % 2) != 0) { //para pegar o elemento com índice impar
+                numIndexImpar.push(numero);
+            }
+
+
+            if (numero < 0) {
+                numNegativo.push(numero);
+            }
+
+        });
+
+        console.log("Numeros em posições ímpares: " + numIndexImpar + "\nNumeros Negativos: " + numNegativo);
+
+    </script>
+</body>
+
+</html>

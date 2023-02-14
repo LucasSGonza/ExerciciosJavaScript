@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var numeros; //vetor principal
+        numeros = [
+            [],
+            [],
+            [],
+            []
+        ];
+
+        var i, j; //[i][j]
+
+        var numDiagonalPrincipal = [];
+        var numDiagonalSecundaria = [];
+        var numLinhaPar = [];
+        var numColunaImpar = [];
+
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 4; j++){
+                numeros[i][j] = parseInt(prompt("Digite um numero inteiro"));
+                document.write(numeros[i][j] + "  ");
+            }
+            document.write("<br>");
+        }
+
+        console.table(numeros);
+
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 4; j++) {
+
+                if (i == j) {
+                    numDiagonalPrincipal.push(numeros[i][j]);
+                } else if ((i + 1) + (j + 1) == 5) {
+                    numDiagonalSecundaria.push(numeros[i][j])
+                }
+
+
+                if (i % 2 == 0) {
+                    numLinhaPar.push(numeros[i][j]);
+                }
+
+                if (j % 2 != 0){
+                    numColunaImpar.push(numeros[i][j]);
+                }
+
+            }
+        }
+        
+        console.log("Diagonal principal: " + numDiagonalPrincipal);
+        console.log("Diagonal secundaria: " + numDiagonalSecundaria);
+        console.log("Numeros em linhas pares: " + numLinhaPar + "\n\n");
+
+        numColunaImpar.forEach( num => {
+            console.log("Numero: " + num + "\nQuadrado: " + Math.pow(num,2));
+        });
+
+    </script>
+</body>
+
+</html>

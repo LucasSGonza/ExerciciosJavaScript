@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Teste</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var matricula = [];
+        var nomeAluno = [];
+
+        var notas = [];
+        var somaNotas;
+        var media = [];
+
+        var turma = [];
+
+        /*
+        var turma = [
+            [1234, "lucas",10],
+            [4231, "carlos",7]
+        ];
+        */
+
+        for (var i = 0; i < 2; i++) {
+            somaNotas = 0;
+            matricula[i] = prompt("Digite a matricula do aluno");
+            nomeAluno[i] = prompt("Digite o nome do aluno");
+
+            for (var j = 0; j < 3; j++) {
+                notas[j] = parseFloat(prompt("Digite as notas do aluno"));
+                somaNotas = somaNotas + notas[j];
+            }
+
+            media[i] = somaNotas / 3;
+            turma.push( [matricula[i], nomeAluno[i], media[i]] );
+        }
+
+        console.table(turma);
+        //console.log(turma[0]);
+
+    </script>
+</body>
+
+</html>
