@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var soma = 0, numero, quantidade,mediaAritmetica;
+        var flag = true;
+
+        for(quantidade = 0; flag == true; quantidade++){
+            numero = parseFloat(prompt("Digite um número"));
+            soma = soma + numero;
+            flag = confirm("Deseja inserir mais números?");
+            //console.log("Numero: " + numero + "\n" + "Soma: " + soma + "\n" + "Quantidade: " + quantidade); --> para verificar se está funcionando kk
+        }
+        //console.log("Numero2: " + numero + "\n" + "Soma2: " + soma + "\n" + "Quantidade2: " + quantidade); --> para verificar se está funcionando kk 2
+
+        mediaAritmetica = soma / quantidade;
+        alert("A média aritmética dos números inseridos é igual a: " + mediaAritmetica.toFixed(2) );
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var numero, numero2, menorNumero;
+        var flag = true;
+
+        for (quantidade = 0; flag == true; quantidade++) {
+
+            numero = parseFloat(prompt("Digite um número"));
+            menorNumero = numero;
+
+            flag = confirm("Deseja inserir mais números?");
+
+            if (flag == true) {
+
+                numero2 = parseFloat(prompt("Digite um número"));
+
+                if (numero > numero2) {
+                    menorNumero = numero2;
+                } else {
+                    menorNumero = numero;
+                }
+
+                flag = confirm("Deseja inserir mais números?");
+
+            }
+
+        }
+
+        alert("O menor dos números inseridos foi o : " + menorNumero);
+
+    </script>
+</body>
+
+</html>
